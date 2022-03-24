@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import { Button } from './Components/Button';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Button border={"none"} background={"#2693ff"} color={"white"} > Primary Button </Button>
+      <Button border={"1px solid black"} background={"white"} color={"black"} > Default Button </Button>
+      <Button border={"1px dashed black"} background={"white"} color={"black"} > Dashed Button </Button>
+      <Button border={"none"} background={"white"} color={"black"} > Text Button </Button>
+      <Button border={"none"} background={"white"} color={"#2693ff"} > Link Button </Button>
     </div>
   );
 }
